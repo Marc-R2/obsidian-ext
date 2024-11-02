@@ -1,0 +1,44 @@
+{
+	"name": "@moritzrs/micromark-extension-ofm",
+	"description": "micromark extension to support Obsidian Flavored Markdown",
+	"version": "0.0.1",
+	"author": "MoritzRS",
+	"license": "MIT",
+	"repository": "https://github.com/MoritzRS/obsidian-ext",
+	"keywords": [
+		"micromark",
+		"micromark-extension",
+		"ofm",
+		"obsidian",
+		"markdown",
+		"unified"
+	],
+	"type": "module",
+	"files": [
+		"dist/"
+	],
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"scripts": {
+		"check": "tsc --noEmit",
+		"build": "tsc",
+		"prepublishOnly": "pnpm run build",
+		"test": "vitest run",
+		"test:coverage": "vitest run --coverage"
+	},
+	"dependencies": {
+		"@moritzrs/micromark-extension-ofm-callout": "workspace:*",
+		"@moritzrs/micromark-extension-ofm-tag": "workspace:*",
+		"@moritzrs/micromark-extension-ofm-wikilink": "workspace:*",
+		"micromark-util-combine-extensions": "^2.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.0.0",
+		"@vitest/coverage-v8": "^2.1.3",
+		"micromark": "^4.0.0",
+		"micromark-util-types": "^2.0.0",
+		"typescript": "^5.0.0",
+		"vitest": "^2.1.3"
+	}
+}

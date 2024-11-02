@@ -1,0 +1,66 @@
+name: CI
+on:
+    workflow_dispatch:
+    push:
+        branches: [main]
+    pull_request:
+jobs:
+    Tests:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node:
+                    - lts/hydrogen
+                    - node
+        steps:
+            - name: Checkout latest version
+              uses: actions/checkout@v4
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+
+            - name: Install NodeJS
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ matrix.node }}
+                  cache: pnpm
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: Build Packages
+              run: pnpm run build
+
+            - name: Test with Coverage
+              run: pnpm run test:coverage
+              env:
+                  CI: true
+    Lint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout latest version
+              uses: actions/checkout@v4
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+
+            - name: Install NodeJS
+              uses: actions/setup-node@v4
+              with:
+                  node-version: node
+                  cache: pnpm
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: Build Packages
+              run: pnpm run build
+
+            - name: Type Checker
+              run: pnpm run check
+
+            - name: Linter
+              run: pnpm run lint
+
+            - name: Formatter
+              run: pnpm run format

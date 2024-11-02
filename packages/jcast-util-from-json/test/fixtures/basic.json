@@ -1,0 +1,94 @@
+{
+    "type": "root",
+    "children": [
+        {
+            "type": "edge",
+            "id": "ab083661029e1274",
+            "value": "",
+            "from": {
+                "node": "e9bf027c2543f54a",
+                "side": "right"
+            },
+            "to": {
+                "node": "16248c734a5f358b",
+                "side": "top"
+            },
+            "direction": "unidirectional"
+        },
+        {
+            "type": "edge",
+            "id": "cdb7b4abf30e4b7f",
+            "value": "",
+            "from": {
+                "node": "e9bf027c2543f54a",
+                "side": "left"
+            },
+            "to": {
+                "node": "ce1f5d11dc3d7449",
+                "side": "top"
+            },
+            "direction": "none"
+        },
+        {
+            "type": "edge",
+            "id": "a770f5542e18b454",
+            "value": "",
+            "from": {
+                "node": "ce1f5d11dc3d7449",
+                "side": "bottom"
+            },
+            "to": {
+                "node": "16248c734a5f358b",
+                "side": "bottom"
+            },
+            "direction": "bidirectional"
+        },
+        {
+            "type": "group",
+            "id": "2d3eb476c79bd6b2",
+            "value": "",
+            "geometry": {
+                "x": -580,
+                "y": -360,
+                "width": 1050,
+                "height": 560
+            },
+            "color": "1",
+            "children": [
+                {
+                    "type": "link",
+                    "id": "ce1f5d11dc3d7449",
+                    "value": "https://page.url/",
+                    "geometry": {
+                        "x": -560,
+                        "y": -220,
+                        "width": 360,
+                        "height": 400
+                    }
+                },
+                {
+                    "type": "text",
+                    "id": "e9bf027c2543f54a",
+                    "value": "Text Node",
+                    "geometry": {
+                        "x": -200,
+                        "y": -340,
+                        "width": 250,
+                        "height": 60
+                    }
+                },
+                {
+                    "type": "file",
+                    "id": "16248c734a5f358b",
+                    "value": "File.md",
+                    "geometry": {
+                        "x": 50,
+                        "y": -220,
+                        "width": 400,
+                        "height": 400
+                    }
+                }
+            ]
+        }
+    ]
+}

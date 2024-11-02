@@ -1,0 +1,17 @@
+{
+    "type": "root",
+    "children": [
+        {
+            "type": "group",
+            "id": "283f09a386cd9cc7",
+            "value": "Empty Group",
+            "geometry": {
+                "x": -380,
+                "y": -160,
+                "width": 614,
+                "height": 225
+            },
+            "children": []
+        }
+    ]
+}

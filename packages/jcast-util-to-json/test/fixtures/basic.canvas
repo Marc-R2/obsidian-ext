@@ -1,0 +1,69 @@
+{
+    "nodes": [
+        {
+            "id": "2d3eb476c79bd6b2",
+            "type": "group",
+            "x": -608,
+            "y": -388,
+            "width": 1106,
+            "height": 616,
+            "color": "1"
+        },
+        {
+            "id": "ce1f5d11dc3d7449",
+            "type": "link",
+            "url": "https://page.url/",
+            "x": -560,
+            "y": -220,
+            "width": 360,
+            "height": 400
+        },
+        {
+            "id": "e9bf027c2543f54a",
+            "type": "text",
+            "text": "Text Node",
+            "x": -200,
+            "y": -340,
+            "width": 250,
+            "height": 60
+        },
+        {
+            "id": "16248c734a5f358b",
+            "type": "file",
+            "file": "File.md",
+            "x": 50,
+            "y": -220,
+            "width": 400,
+            "height": 400
+        }
+    ],
+    "edges": [
+        {
+            "id": "ab083661029e1274",
+            "fromNode": "e9bf027c2543f54a",
+            "fromSide": "right",
+            "fromEnd": "none",
+            "toNode": "16248c734a5f358b",
+            "toSide": "top",
+            "toEnd": "arrow"
+        },
+        {
+            "id": "cdb7b4abf30e4b7f",
+            "fromNode": "e9bf027c2543f54a",
+            "fromSide": "left",
+            "fromEnd": "none",
+            "toNode": "ce1f5d11dc3d7449",
+            "toSide": "top",
+            "toEnd": "none"
+        },
+        {
+            "id": "a770f5542e18b454",
+            "fromNode": "ce1f5d11dc3d7449",
+            "fromSide": "bottom",
+            "fromEnd": "arrow",
+            "toNode": "16248c734a5f358b",
+            "toSide": "bottom",
+            "toEnd": "arrow"
+        }
+    ]
+}

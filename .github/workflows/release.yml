@@ -1,0 +1,31 @@
+name: Release
+on:
+    workflow_dispatch:
+jobs:
+    Release:
+        if: github.repository == 'moritzrs/obsidian-ext'
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout latest version
+              uses: actions/checkout@v4
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+
+            - name: Install NodeJS
+              uses: actions/setup-node@v4
+              with:
+                  node-version: node
+                  cache: pnpm
+                  registry-url: "https://registry.npmjs.org"
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: Build Packages
+              run: pnpm run build
+
+            - name: Publish Packages
+              run: pnpm run publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

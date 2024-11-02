@@ -1,0 +1,36 @@
+{
+	"name": "obsidian-ext",
+	"private": true,
+	"author": "MoritzRS",
+	"license": "MIT",
+	"type": "module",
+	"packageManager": "pnpm@9.12.3",
+	"engines": {
+		"node": ">=18.0.0",
+		"pnpm": ">=9.0.0",
+		"npm": "please-use-pnpm",
+		"yarn": "please-use-pnpm"
+	},
+	"scripts": {
+		"build": "pnpm run -r build",
+		"publish": "pnpm publish -r --access public",
+		"check": "pnpm run -r check",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"format": "prettier --check .",
+		"format:fix": "prettier --write .",
+		"fix": "pnpm run lint:fix && pnpm run format:fix",
+		"test": "pnpm run -r test",
+		"test:coverage": "pnpm run -r test:coverage"
+	},
+	"devDependencies": {
+		"@eslint/compat": "^1.2.1",
+		"@eslint/js": "^9.13.0",
+		"eslint": "^9.13.0",
+		"globals": "^15.11.0",
+		"prettier": "^3.3.3",
+		"typescript": "^5.6.3",
+		"typescript-eslint": "^8.11.0",
+		"vitest": "^2.1.3"
+	}
+}
