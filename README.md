@@ -7,16 +7,16 @@ Extensions and utilities regarding Obsidian Flavored Markdown (OFM) and the [Obs
 
 ## Feature Highlights
 
--   [x] robust (tested, 100% coverage, fully typed)
--   [x] small (minimal dependencies)
--   [x] obsidian flavored markdown (Callouts, Tags, Wikilinks)
--   [x] json canvas (validate, parse, transform)
+- [x] robust (tested, 100% coverage, fully typed)
+- [x] small (minimal dependencies)
+- [x] obsidian flavored markdown (Callouts, Tags, Wikilinks)
+- [x] json canvas (validate, parse, transform)
 
 ## When should I use this?
 
--   If you want to parse or transform Obsidian Flavored Markdown (OFM)
--   If you want to work with JSON Canvas
--   If you want to work with files from your Obsidian vault
+- If you want to parse or transform Obsidian Flavored Markdown (OFM)
+- If you want to work with JSON Canvas
+- If you want to work with files from your Obsidian vault
 
 ## What is this?
 
@@ -30,35 +30,35 @@ After a short while I also wanted to work with the JSON Canvas format, so I adde
 
 #### Markdown
 
--   [remark-ofm](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/remark-ofm)
--   [mdast-util-ofm](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//mdast-util-ofm)
--   [mdast-util-ofm-callout](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//mdast-util-ofm-callout)
--   [mdast-util-ofm-tag](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//mdast-util-ofm-tag)
--   [mdast-util-ofm-wikilink](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//mdast-util-ofm-wikilink)
--   [micromark-extension-ofm](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//micromark-extension-ofm)
--   [micromark-extension-ofm-callout](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//micromark-extension-ofm-callout)
--   [micromark-extension-ofm-tag](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//micromark-extension-ofm-tag)
--   [micromark-extension-ofm-wikilink](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//micromark-extension-ofm-wikilink)
+- [remark-ofm](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/remark-ofm)
+- [mdast-util-ofm](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//mdast-util-ofm)
+- [mdast-util-ofm-callout](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//mdast-util-ofm-callout)
+- [mdast-util-ofm-tag](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//mdast-util-ofm-tag)
+- [mdast-util-ofm-wikilink](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//mdast-util-ofm-wikilink)
+- [micromark-extension-ofm](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//micromark-extension-ofm)
+- [micromark-extension-ofm-callout](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//micromark-extension-ofm-callout)
+- [micromark-extension-ofm-tag](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//micromark-extension-ofm-tag)
+- [micromark-extension-ofm-wikilink](https://github.com/MoritzRS/obsidian-ext/tree/main/packages//micromark-extension-ofm-wikilink)
 
 #### JSON Canvas
 
--   [jsoncanvas](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/jsoncanvas)
--   [jcast](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/jcast)
--   [jcast-util-from-json](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/jcast-util-from-json)
--   [jcast-util-to-json](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/jcast-util-to-json)
+- [jsoncanvas](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/jsoncanvas)
+- [jcast](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/jcast)
+- [jcast-util-from-json](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/jcast-util-from-json)
+- [jcast-util-to-json](https://github.com/MoritzRS/obsidian-ext/tree/main/packages/jcast-util-to-json)
 
 ## In Progress / Planned
 
--   [ ] Add more tests
--   [ ] Add mdast utility to resolve links
--   [ ] Add support for [OFM Comments](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments)
--   [ ] Add support for [OFM Blocks](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link+to+a+block+in+a+note)
--   [ ] Add support for [mdast-util-to-hast](https://github.com/syntax-tree/mdast-util-to-hast)
--   [ ] Add mdast utility to transform OFM to GFM (Github Flavored Markdown) and other formats
--   [ ] Add more utilities for jsoncanvas (e.g. to transform to other formats)
--   [ ] Add Codemirror language extensions
--   [ ] Add CLI (analyze/check/convert content)
--   [ ] Add web exporter
+- [ ] Add more tests
+- [ ] Add mdast utility to resolve links
+- [ ] Add support for [OFM Comments](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments)
+- [ ] Add support for [OFM Blocks](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link+to+a+block+in+a+note)
+- [ ] Add support for [mdast-util-to-hast](https://github.com/syntax-tree/mdast-util-to-hast)
+- [ ] Add mdast utility to transform OFM to GFM (Github Flavored Markdown) and other formats
+- [ ] Add more utilities for jsoncanvas (e.g. to transform to other formats)
+- [ ] Add Codemirror language extensions
+- [ ] Add CLI (analyze/check/convert content)
+- [ ] Add web exporter
 
 ## Contribute
 
