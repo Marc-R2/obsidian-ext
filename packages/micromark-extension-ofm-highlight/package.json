@@ -1,0 +1,40 @@
+{
+	"name": "@marc-r2/micromark-extension-ofm-highlight",
+	"description": "micromark extension to support OFM highlights",
+	"version": "0.0.1",
+	"author": "Marc-R2",
+	"license": "MIT",
+	"repository": "https://github.com/MoritzRS/obsidian-ext",
+	"keywords": [
+		"micromark",
+		"micromark-extension",
+		"tag",
+		"tags",
+		"ofm",
+		"obsidian",
+		"markdown",
+		"unified"
+	],
+	"type": "module",
+	"files": [
+		"dist/"
+	],
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"scripts": {
+		"check": "tsc --noEmit",
+		"build": "tsc",
+		"prepublishOnly": "pnpm run build",
+		"test": "vitest run",
+		"test:coverage": "vitest run --coverage"
+	},
+	"devDependencies": {
+		"@types/node": "^22.0.0",
+		"@vitest/coverage-v8": "^3.2.4",
+		"micromark": "^4.0.0",
+		"micromark-util-types": "^2.0.0",
+		"typescript": "^5.0.0",
+		"vitest": "^3.2.4"
+	}
+}
