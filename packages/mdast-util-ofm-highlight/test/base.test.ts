@@ -111,9 +111,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "text", value: "a =not highlight= b" },
-					],
+					children: [{ type: "text", value: "a =not highlight= b" }],
 				},
 			],
 		});
@@ -154,9 +152,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "text", value: "==== empty" },
-					],
+					children: [{ type: "text", value: "==== empty" }],
 				},
 			],
 		});
@@ -175,9 +171,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "text", value: "== spaces break ==" },
-					],
+					children: [{ type: "text", value: "== spaces break ==" }],
 				},
 			],
 		});
@@ -240,9 +234,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "test123!@#$%", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "test123!@#$%", pre: 2, post: 2 }],
 				},
 			],
 		});
@@ -261,9 +253,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "a=b=c", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "a=b=c", pre: 2, post: 2 }],
 				},
 			],
 		});
@@ -377,9 +367,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "long", pre: 6, post: 6 },
-					],
+					children: [{ type: "ofmHighlight", value: "long", pre: 6, post: 6 }],
 				},
 			],
 		});
@@ -420,9 +408,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "before=after", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "before=after", pre: 2, post: 2 }],
 				},
 			],
 		});
@@ -441,9 +427,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "a=b=c=d=e", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "a=b=c=d=e", pre: 2, post: 2 }],
 				},
 			],
 		});
@@ -462,9 +446,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "text", pre: 3, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "text", pre: 3, post: 2 }],
 				},
 			],
 		});
@@ -483,9 +465,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "text", pre: 2, post: 3 },
-					],
+					children: [{ type: "ofmHighlight", value: "text", pre: 2, post: 3 }],
 				},
 			],
 		});
@@ -526,9 +506,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "text=close", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "text=close", pre: 2, post: 2 }],
 				},
 			],
 		});
@@ -547,9 +525,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "a=b=c=d", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "a=b=c=d", pre: 2, post: 2 }],
 				},
 			],
 		});
@@ -568,9 +544,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "x=y+z", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "x=y+z", pre: 2, post: 2 }],
 				},
 			],
 		});
@@ -637,9 +611,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "x=y+z", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "x=y+z", pre: 2, post: 2 }],
 				},
 				{
 					type: "paragraph",
@@ -665,15 +637,11 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "x=y+z", pre: 2, post: 0 },
-					],
+					children: [{ type: "ofmHighlight", value: "x=y+z", pre: 2, post: 0 }],
 				},
 				{
 					type: "paragraph",
-					children: [
-						{ type: "text", value: "highlight== and more text" },
-					],
+					children: [{ type: "text", value: "highlight== and more text" }],
 				},
 			],
 		});
@@ -770,16 +738,14 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: ".*+?^${}()|[]\\", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: ".*+?^${}()|[]\\", pre: 2, post: 2 }],
 				},
 			],
 		});
 	});
 
 	test("quotes and escapes in highlights", () => {
-		const tree = fromMarkdown('=="quotes" and \'apostrophes\' and \\backslashes==', {
+		const tree = fromMarkdown("==\"quotes\" and 'apostrophes' and \\backslashes==", {
 			extensions: [ofmHighlight()],
 			mdastExtensions: [ofmHighlightFromMarkdown()],
 		});
@@ -792,7 +758,12 @@ suite("mdast-util-ofm-highlight", async () => {
 				{
 					type: "paragraph",
 					children: [
-						{ type: "ofmHighlight", value: '"quotes" and \'apostrophes\' and \\backslashes', pre: 2, post: 2 },
+						{
+							type: "ofmHighlight",
+							value: "\"quotes\" and 'apostrophes' and \\backslashes",
+							pre: 2,
+							post: 2,
+						},
 					],
 				},
 			],
@@ -812,9 +783,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "text", pre: 6, post: 6 },
-					],
+					children: [{ type: "ofmHighlight", value: "text", pre: 6, post: 6 }],
 				},
 			],
 		});
@@ -833,9 +802,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "text", value: "text = not highlight = text" },
-					],
+					children: [{ type: "text", value: "text = not highlight = text" }],
 				},
 			],
 		});
@@ -867,7 +834,7 @@ suite("mdast-util-ofm-highlight", async () => {
 	});
 
 	test("highlight with only special characters", () => {
-		const tree = fromMarkdown("==!@#$%^&*()_+-={}[]|\\:\";<>?,./==", {
+		const tree = fromMarkdown('==!@#$%^&*()_+-={}[]|\\:";<>?,./==', {
 			extensions: [ofmHighlight()],
 			mdastExtensions: [ofmHighlightFromMarkdown()],
 		});
@@ -880,7 +847,12 @@ suite("mdast-util-ofm-highlight", async () => {
 				{
 					type: "paragraph",
 					children: [
-						{ type: "ofmHighlight", value: "!@#$%^&*()_+-={}[]|\\:\";<>?,./", pre: 2, post: 2 },
+						{
+							type: "ofmHighlight",
+							value: '!@#$%^&*()_+-={}[]|\\:";<>?,./',
+							pre: 2,
+							post: 2,
+						},
 					],
 				},
 			],
@@ -900,19 +872,20 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: "line1\nline2", pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: "line1\nline2", pre: 2, post: 2 }],
 				},
 			],
 		});
 	});
 
 	test("mixed content with code-like patterns", () => {
-		const tree = fromMarkdown("function test() {\n  return ==someVariable== === ==otherVar==;\n}", {
-			extensions: [ofmHighlight()],
-			mdastExtensions: [ofmHighlightFromMarkdown()],
-		});
+		const tree = fromMarkdown(
+			"function test() {\n  return ==someVariable== === ==otherVar==;\n}",
+			{
+				extensions: [ofmHighlight()],
+				mdastExtensions: [ofmHighlightFromMarkdown()],
+			},
+		);
 
 		removePosition(tree, { force: true });
 
@@ -969,9 +942,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "text", value: "= == === ==== ===== ====== =======" },
-					],
+					children: [{ type: "text", value: "= == === ==== ===== ====== =======" }],
 				},
 			],
 		});
@@ -984,9 +955,7 @@ suite("mdast-util-ofm-highlight", async () => {
 				children: [
 					{
 						type: "paragraph",
-						children: [
-							{ type: "ofmHighlight", value: "text", pre: 3, post: 2 },
-						],
+						children: [{ type: "ofmHighlight", value: "text", pre: 3, post: 2 }],
 					},
 				],
 			},
@@ -1003,9 +972,7 @@ suite("mdast-util-ofm-highlight", async () => {
 				children: [
 					{
 						type: "paragraph",
-						children: [
-							{ type: "ofmHighlight", value: "unclosed", pre: 2, post: 0 },
-						],
+						children: [{ type: "ofmHighlight", value: "unclosed", pre: 2, post: 0 }],
 					},
 				],
 			},
@@ -1016,7 +983,7 @@ suite("mdast-util-ofm-highlight", async () => {
 	});
 
 	test("very long content", () => {
-		const longText = 'a'.repeat(1000);
+		const longText = "a".repeat(1000);
 		const tree = fromMarkdown(`==${longText}==`, {
 			extensions: [ofmHighlight()],
 			mdastExtensions: [ofmHighlightFromMarkdown()],
@@ -1029,16 +996,14 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "ofmHighlight", value: longText, pre: 2, post: 2 },
-					],
+					children: [{ type: "ofmHighlight", value: longText, pre: 2, post: 2 }],
 				},
 			],
 		});
 	});
 
 	test("many highlights in sequence", () => {
-		const text = Array(50).fill('==hi==').join(' ');
+		const text = Array(50).fill("==hi==").join(" ");
 		const tree = fromMarkdown(text, {
 			extensions: [ofmHighlight()],
 			mdastExtensions: [ofmHighlightFromMarkdown()],
@@ -1076,9 +1041,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "text", value: "=" },
-					],
+					children: [{ type: "text", value: "=" }],
 				},
 			],
 		});
@@ -1095,7 +1058,7 @@ suite("mdast-util-ofm-highlight", async () => {
 	});
 
 	test("only highlight markers", () => {
-		const text = '=='.repeat(50);
+		const text = "==".repeat(50);
 		const tree = fromMarkdown(text, {
 			extensions: [ofmHighlight()],
 			mdastExtensions: [ofmHighlightFromMarkdown()],
@@ -1108,9 +1071,7 @@ suite("mdast-util-ofm-highlight", async () => {
 			children: [
 				{
 					type: "paragraph",
-					children: [
-						{ type: "text", value: text },
-					],
+					children: [{ type: "text", value: text }],
 				},
 			],
 		});

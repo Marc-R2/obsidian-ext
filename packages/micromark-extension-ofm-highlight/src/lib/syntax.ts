@@ -87,7 +87,7 @@ function tokenize(this: TokenizeContext, effects: Effects, ok: State, nok: State
 		return content;
 	}
 
-	function closingMarker(code: Code): State | ((code: Code) => (State | undefined)) | undefined {
+	function closingMarker(code: Code): State | ((code: Code) => State | undefined) | undefined {
 		if (code === EQUALS) {
 			effects.consume(code);
 			closingMarkerSize++;
@@ -104,7 +104,7 @@ function tokenize(this: TokenizeContext, effects: Effects, ok: State, nok: State
 		// Exit the marker and continue as content, but consume the single = as content
 		effects.exit("ofmHighlightMarker");
 		effects.enter("ofmHighlightContent");
-		
+
 		// The single = was already consumed in the marker, it will be processed by mdast utility
 		return content(code);
 	}
